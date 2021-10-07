@@ -7,13 +7,19 @@ const App = () => {
   let name = "Fred";
   let age = 31;
 
+  const handleClick = () => { // função para o click
+    alert("Clicou na função.");
+  }
+
   return ( // Usando prop no Header
     <div>
-     <Header name={name} age={age} />  
 
-    <button> Clique aqui</button>
+      <Header name={name} age={age} />  
+      
+      <button onClick = {handleClick}> Clique aqui </button> 
     
-     <Footer/>
+
+      <Footer/> 
     </div>
   )
 }
