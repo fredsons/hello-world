@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Importando o Header criado
+import {Header} from './components/Header';
+// Importando o Footer criado
+import { Footer } from './components/Footer';
+// Componente React
+const App = () => {  
+  let name = "Fred";
+  let age = 31;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return ( // Usando prop no Header
+    <div>
+     <Header name={name} age={age} />  
+
+    <button> Clique aqui</button>
+    
+     <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;
