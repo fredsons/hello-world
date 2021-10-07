@@ -45,7 +45,7 @@ const App = () => {
       <hr />
 
       <ul>
-        {list.map((frase, index)=>(
+        {list.map((frase, index)=>( // função map passando um array
           <li key={index}>{frase}</li>
         ))}
       </ul>
